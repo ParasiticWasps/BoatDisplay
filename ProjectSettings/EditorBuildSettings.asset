@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/BoatDisplay/Scenes/Demo.unity
+    guid: 70a4165dcff41bc4db3a06a8231d8fcb
+  - enabled: 1
+    path: Assets/BoatDisplay/Scenes/MainScene.unity
+    guid: 1e30edfd6825de242961a6c7a5c90793
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 491996baf5901084a93a380d94b40727, type: 2}
+    Unity.XR.PXR.Settings: {fileID: 11400000, guid: c91eaa3345f8f784f912bebb123623d8, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b5293c99d83e9be44ba9826312c0a419, type: 2}
