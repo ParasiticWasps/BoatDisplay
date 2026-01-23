@@ -140,7 +140,7 @@ static public class LuxWaterUtils {
 		GersterWavesDescription Description,
 		float TimeOffset
 	) {
-
+			
 		Vector2 xzVtx;
 		xzVtx.x = WorldPosition.x;
 		xzVtx.y = WorldPosition.z;
