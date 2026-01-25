@@ -142,7 +142,7 @@ Material:
     - _UnderwaterScatteringPower: 1.75
     - _UsesWaterVolume: 0
     - _WaterIOR: 1.25
-    - _WaterSurfaceYPos: 22.099998
+    - _WaterSurfaceYPos: 22.699997
     - _WorldSpaceMappingEnabled: 1
     - _ZTest: 4
     - _ZWrite: 1
