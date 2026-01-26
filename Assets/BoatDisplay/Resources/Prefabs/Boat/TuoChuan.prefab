@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1396155227707448187}
   - component: {fileID: 1169164559952226976}
   - component: {fileID: 1549722014781989758}
+  - component: {fileID: 8183013649726340278}
+  - component: {fileID: 1484867001090344931}
   m_Layer: 0
   m_Name: default
   m_TagString: Untagged
@@ -27,9 +29,9 @@ Transform:
   m_GameObject: {fileID: 4851414000153118481}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -0, y: -6.9, z: 0}
+  m_LocalScale: {x: 45, y: 45, z: 45}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 4729760762380155286}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -83,6 +85,42 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8183013649726340278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4851414000153118481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a706766456e6ea24c89c59deb0424238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaterMaterial: {fileID: 2100000, guid: 5d430e944c5aeba4da80acbfa151d54b, type: 2}
+  Damping: {x: 0.025, y: 0.05, z: 0.25}
+  TimeOffset: 0.1
+  UpdateWaterMaterialPerFrame: 0
+  AddCircleAnim: 0
+  Radius: 6
+  Speed: 1
+  ManagedWaterProjectors: []
+  MaxDisp: 0
+--- !u!114 &1484867001090344931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4851414000153118481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01af7068a8a164a4c93bfe14ddb921e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boatName: "\u62D6\u8239"
+  smallSize: 20
+  largeSize: 45
 --- !u!1 &6735026910137494125
 GameObject:
   m_ObjectHideFlags: 0
@@ -98,7 +136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4729760762380155286
 Transform:
   m_ObjectHideFlags: 0
@@ -107,7 +145,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6735026910137494125}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

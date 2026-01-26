@@ -11,13 +11,15 @@ GameObject:
   - component: {fileID: 4765853653204374520}
   - component: {fileID: 7780902230740501240}
   - component: {fileID: 5232083434136630161}
+  - component: {fileID: 7199094373293327988}
+  - component: {fileID: 4207440424252173778}
   m_Layer: 0
   m_Name: JiDongChuan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4765853653204374520
 Transform:
   m_ObjectHideFlags: 0
@@ -28,11 +30,11 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: 86.100006, y: 1.9000015, z: -3}
-  m_LocalScale: {x: 99.999985, y: 100, z: 100.000015}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 4000, y: 4000, z: 4000}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -90}
 --- !u!33 &7780902230740501240
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -83,3 +85,39 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7199094373293327988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43103807935382737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a706766456e6ea24c89c59deb0424238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaterMaterial: {fileID: 2100000, guid: 5d430e944c5aeba4da80acbfa151d54b, type: 2}
+  Damping: {x: 0.025, y: 0.05, z: 0.25}
+  TimeOffset: 0.1
+  UpdateWaterMaterialPerFrame: 0
+  AddCircleAnim: 0
+  Radius: 6
+  Speed: 1
+  ManagedWaterProjectors: []
+  MaxDisp: 0
+--- !u!114 &4207440424252173778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43103807935382737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01af7068a8a164a4c93bfe14ddb921e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boatName: "\u673A\u52A8\u8239"
+  smallSize: 2000
+  largeSize: 4000
