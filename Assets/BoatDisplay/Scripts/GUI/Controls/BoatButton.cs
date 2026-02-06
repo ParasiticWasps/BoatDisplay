@@ -20,19 +20,12 @@ public class BoatButton : MonoBehaviour
 
     #region Event
 
-    public delegate void OnDisplayButtonClicked(int boatIndex);
-
-    private event OnDisplayButtonClicked onDisplayShipEvent;
-
-    private event OnDisplayButtonClicked onDisplayBoatEvent;
-
     #endregion
-    public void Initialized(string boatName, int _boatIndex, OnDisplayButtonClicked displayShip, OnDisplayButtonClicked displayBoat)
+
+    public void Initialized(string boatName, int _boatIndex)
     {
         nameText.text = boatName;
         boatIndex = _boatIndex;
-        onDisplayShipEvent = displayShip;
-        onDisplayBoatEvent = displayBoat;
     }
 
     #region UI Components Unity Event
@@ -40,16 +33,6 @@ public class BoatButton : MonoBehaviour
     public void OnClickedExpandButton()
     {
         ControlPanel(isExpand);
-    }
-
-    public void ShowBigShip()
-    {
-        onDisplayShipEvent(boatIndex);
-    }
-
-    public void ShowBoat()
-    {
-        onDisplayBoatEvent(boatIndex);
     }
 
     #endregion
@@ -63,5 +46,7 @@ public class BoatButton : MonoBehaviour
         LayoutRebuilder.ForceRebuildLayoutImmediate(GetComponent<RectTransform>());
         isExpand = !_isExpand;
     }
+
+    public int GetBoatIndex() => boatIndex;
 }
  

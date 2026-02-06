@@ -162,6 +162,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.Sugar.BoatDisplay
+    Standalone: com.Sugar.BoatDisplay
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -439,6 +440,9 @@ PlayerSettings:
   - m_BuildTarget: WebGLSupport
     m_APIs: 0b000000
     m_Automatic: 1
+  - m_BuildTarget: WindowsStandaloneSupport
+    m_APIs: 02000000
+    m_Automatic: 0
   m_BuildTargetVRSettings:
   - m_BuildTarget: Standalone
     m_Enabled: 0
@@ -739,19 +743,23 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: ENVIRO_3
-    EmbeddedLinux: ENVIRO_3
-    GameCoreXboxOne: ENVIRO_3
-    Nintendo Switch: ENVIRO_3
-    PS4: ENVIRO_3
-    PS5: ENVIRO_3
-    QNX: ENVIRO_3
-    Stadia: ENVIRO_3
-    Standalone: ENVIRO_3
-    VisionOS: ENVIRO_3
-    WebGL: ENVIRO_3
-    XboxOne: ENVIRO_3
-    tvOS: ENVIRO_3
+    Android: ENVIRO_3;DOTWEEN;USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
+    EmbeddedLinux: ENVIRO_3;DOTWEEN
+    GameCoreScarlett: DOTWEEN
+    GameCoreXboxOne: ENVIRO_3;DOTWEEN
+    LinuxHeadlessSimulation: DOTWEEN
+    Nintendo Switch: ENVIRO_3;DOTWEEN
+    PS4: ENVIRO_3;DOTWEEN
+    PS5: ENVIRO_3;DOTWEEN
+    QNX: ENVIRO_3;DOTWEEN
+    Stadia: ENVIRO_3;DOTWEEN
+    Standalone: ENVIRO_3;DOTWEEN;USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
+    VisionOS: ENVIRO_3;DOTWEEN
+    WebGL: ENVIRO_3;DOTWEEN
+    Windows Store Apps: DOTWEEN;USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
+    XboxOne: ENVIRO_3;DOTWEEN
+    iPhone: DOTWEEN
+    tvOS: ENVIRO_3;DOTWEEN
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
