@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BoatGUI : MonoBehaviour
+public class BoatGUI : BaseGui
 {
     [SerializeField] private GameObject boatItemPrefab;
 
@@ -17,8 +17,10 @@ public class BoatGUI : MonoBehaviour
 
     public BoatPanel boatPanel;
 
-    private void Awake()
+    override public void Awake()
     {
+        guiName = EPanel.BoatPanel;
+        base.Awake();
         Initialized();
     }
 
