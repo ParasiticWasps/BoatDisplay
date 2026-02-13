@@ -67,10 +67,10 @@ MonoBehaviour:
     cirrusCloudsAlpha: 0.5
     cirrusCloudsCoverage: 0.5
     cirrusCloudsColorPower: 1
-    flatCloudsCoverage: 1
-    flatCloudsDensity: 1
-    flatCloudsLightIntensity: 1
-    flatCloudsAmbientIntensity: 1
+    flatCloudsCoverage: 1.22
+    flatCloudsDensity: 0.6
+    flatCloudsLightIntensity: 0.16
+    flatCloudsAmbientIntensity: 0
     flatCloudsAbsorbtion: 0.6
   lightingOverride:
     directLightIntensityModifier: 1
@@ -80,18 +80,18 @@ MonoBehaviour:
     intensity: 1
     skyColorTint: {r: 1, g: 1, b: 1, a: 1}
   fogOverride:
-    fogDensity: 0.142
-    fogHeightFalloff: 0.0034
-    fogHeight: 0
-    fogDensity2: 0.651
-    fogHeightFalloff2: 0.0469
-    fogHeight2: 0
-    fogColorBlend: 0.75
-    fogColorMod: {r: 1, g: 1, b: 1, a: 1}
-    scattering: 0.461
-    extinction: 0.046
-    anistropy: 0.3
-    unityFogDensity: 0.002
+    fogDensity: 0
+    fogHeightFalloff: 0
+    fogHeight: 120
+    fogDensity2: 1
+    fogHeightFalloff2: 0.05
+    fogHeight2: 73.17
+    fogColorBlend: 1
+    fogColorMod: {r: 0.084905684, g: 0.084905684, b: 0.084905684, a: 1}
+    scattering: 2
+    extinction: 1
+    anistropy: 0
+    unityFogDensity: 10
     unityFogStartDistance: 0
     unityFogEndDistance: 1000
   auroraOverride:
@@ -105,10 +105,10 @@ MonoBehaviour:
     lightningStorm: 0
     randomLightningDelay: 1
   environmentOverride:
-    temperatureWeatherMod: 0
-    wetnessTarget: 0
-    snowTarget: 0
-    windDirectionX: 1
+    temperatureWeatherMod: -2.1
+    wetnessTarget: 0.6
+    snowTarget: 1
+    windDirectionX: 0.83
     windDirectionY: -1
     windSpeed: 0.25
     windTurbulence: 0.25

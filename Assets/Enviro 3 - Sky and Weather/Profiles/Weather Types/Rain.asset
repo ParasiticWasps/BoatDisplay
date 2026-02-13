@@ -64,17 +64,18 @@ MonoBehaviour:
     detailErosionIntensityLayer2: 0.3
     curlIntensityLayer2: 0.05
   flatCloudsOverride:
-    cirrusCloudsAlpha: 0
-    cirrusCloudsCoverage: 0
+    cirrusCloudsAlpha: 0.539
+    cirrusCloudsCoverage: 1
     cirrusCloudsColorPower: 1
     flatCloudsCoverage: 0
-    flatCloudsDensity: 1
+    flatCloudsDensity: 0
     flatCloudsLightIntensity: 1
-    flatCloudsAmbientIntensity: 1
+    flatCloudsAmbientIntensity: 0.16
     flatCloudsAbsorbtion: 0.6
   lightingOverride:
     directLightIntensityModifier: 0.5
     ambientIntensityModifier: 0.6
+    shadowIntensity: 1
   skyOverride:
     intensity: 1
     skyColorTint: {r: 1, g: 1, b: 1, a: 1}

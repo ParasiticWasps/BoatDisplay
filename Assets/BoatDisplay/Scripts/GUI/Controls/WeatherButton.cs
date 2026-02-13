@@ -34,7 +34,7 @@ public class WeatherButton : MonoBehaviour
         {
             OnClickedEvent();
             OnChangedWeatherEvent?.Invoke();
-            OnButtonClickedEvent.Invoke(this);
+            OnButtonClickedEvent?.Invoke(this);
         });
     }
 

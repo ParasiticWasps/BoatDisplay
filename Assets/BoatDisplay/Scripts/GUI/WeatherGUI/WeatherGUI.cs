@@ -19,6 +19,10 @@ public class WeatherGUI : BaseGui
 
     private void SelectedWeatherButton(WeatherButton weatherButton)
     {
+        if (lastoneButton != null)
+        {
+            lastoneButton.OnDisClickedEvent();
+        }
         lastoneButton = weatherButton;
     }
 }

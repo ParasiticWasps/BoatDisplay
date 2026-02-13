@@ -39,7 +39,7 @@ MonoBehaviour:
     steps: 32
   flatCloudsOverride:
     cirrusClouds: 1
-    flatClouds: 0
+    flatClouds: 1
   auroraOverride:
     aurora: 1
     steps: 24
