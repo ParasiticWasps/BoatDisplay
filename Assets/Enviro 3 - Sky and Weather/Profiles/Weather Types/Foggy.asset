@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cbac6e678443724c9bd2baf5d564c1d, type: 3}
   m_Name: Foggy
   m_EditorClassIdentifier: 
-  showEditor: 0
+  showEditor: 1
   showEffectControls: 0
   showCloudControls: 0
   showFlatCloudControls: 0
-  showFogControls: 0
+  showFogControls: 1
   showSkyControls: 0
   showLightingControls: 0
   showAuroraControls: 0
@@ -86,7 +86,7 @@ MonoBehaviour:
     fogDensity2: 1
     fogHeightFalloff2: 0.05
     fogHeight2: 73.17
-    fogColorBlend: 1
+    fogColorBlend: 0.778
     fogColorMod: {r: 0.084905684, g: 0.084905684, b: 0.084905684, a: 1}
     scattering: 2
     extinction: 1

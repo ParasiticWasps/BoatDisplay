@@ -1,3 +1,4 @@
+using Enviro;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,6 +10,8 @@ public class WeatherButton : MonoBehaviour
     [SerializeField] private Sprite defaultImage;
 
     [SerializeField] private Sprite selectedImage;
+
+    public int WeatherIndex = 0;
 
     #region UI Component
 
@@ -41,6 +44,12 @@ public class WeatherButton : MonoBehaviour
     public void OnClickedEvent()
     {
         iconImage.sprite = selectedImage;
+
+        if (EnviroManager.instance.Weather != null)
+        {
+            if (EnviroManager.instance.Weather.Settings.weatherTypes.Count >= WeatherIndex)
+                EnviroManager.instance.Weather.ChangeWeather(EnviroManager.instance.Weather.Settings.weatherTypes[WeatherIndex]);
+        }
     }
 
     public void OnDisClickedEvent()

@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using VolumetricFogAndMist;
 
 public class WeatherGUI : BaseGui
 {
     [SerializeField] private List<WeatherButton> weatherButtons = new List<WeatherButton>();
 
     WeatherButton lastoneButton;
+
+    [SerializeField] private VolumetricFogPosT fogLauncher;
 
     private void Start()
     {
@@ -15,6 +18,7 @@ public class WeatherGUI : BaseGui
             int idx = i;
             weatherButtons[idx].OnButtonClickedEvent += SelectedWeatherButton;
         }
+        fogLauncher.enabled = false;
     }
 
     private void SelectedWeatherButton(WeatherButton weatherButton)
@@ -23,6 +27,8 @@ public class WeatherGUI : BaseGui
         {
             lastoneButton.OnDisClickedEvent();
         }
+
         lastoneButton = weatherButton;
+        fogLauncher.enabled = lastoneButton.WeatherIndex == 3;
     }
 }
