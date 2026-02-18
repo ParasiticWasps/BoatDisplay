@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,7 +10,7 @@ public class WeatherGUI : BaseGui
 
     WeatherButton lastoneButton;
 
-    [SerializeField] private VolumetricFogPosT fogLauncher;
+    //[SerializeField] private VolumetricFogPosT fogLauncher;
 
     private void Start()
     {
@@ -18,7 +19,9 @@ public class WeatherGUI : BaseGui
             int idx = i;
             weatherButtons[idx].OnButtonClickedEvent += SelectedWeatherButton;
         }
-        fogLauncher.enabled = false;
+        //fogLauncher.enabled = false;
+
+        VolumetricFog.instance.alpha = 0.0f;
     }
 
     private void SelectedWeatherButton(WeatherButton weatherButton)
@@ -29,6 +32,8 @@ public class WeatherGUI : BaseGui
         }
 
         lastoneButton = weatherButton;
-        fogLauncher.enabled = lastoneButton.WeatherIndex == 3;
+        DOTween.To(() => VolumetricFog.instance.alpha, x => VolumetricFog.instance.alpha = x,
+            lastoneButton.WeatherIndex == 3 ? 1.0f : 0.0f, 1.5f);
+        //fogLauncher.enabled = lastoneButton.WeatherIndex == 3;
     }
 }

@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cbac6e678443724c9bd2baf5d564c1d, type: 3}
   m_Name: Rain
   m_EditorClassIdentifier: 
-  showEditor: 0
+  showEditor: 1
   showEffectControls: 0
   showCloudControls: 0
-  showFlatCloudControls: 0
+  showFlatCloudControls: 1
   showFogControls: 0
-  showSkyControls: 0
+  showSkyControls: 1
   showLightingControls: 0
   showAuroraControls: 0
   showEnvironmentControls: 0
@@ -27,7 +27,7 @@ MonoBehaviour:
   showLightningControls: 0
   cloudsOverride:
     ambientLightIntensity: 0.6
-    showLayer1: 1
+    showLayer1: 0
     coverageLayer1: 0.48
     dilateCoverageLayer1: 1
     dilateTypeLayer1: 0.233
@@ -53,7 +53,7 @@ MonoBehaviour:
     anvilBiasLayer2: 0
     scatteringIntensityLayer2: 1.5
     multiScatteringALayer2: 0.5
-    multiScatteringBLayer2: 0.5
+    multiScatteringBLayer2: 0.52
     multiScatteringCLayer2: 0.5
     powderIntensityLayer2: 0.3
     silverLiningSpreadLayer2: 0.8
@@ -64,21 +64,21 @@ MonoBehaviour:
     detailErosionIntensityLayer2: 0.3
     curlIntensityLayer2: 0.05
   flatCloudsOverride:
-    cirrusCloudsAlpha: 0.539
-    cirrusCloudsCoverage: 1
-    cirrusCloudsColorPower: 1
-    flatCloudsCoverage: 0
-    flatCloudsDensity: 0
-    flatCloudsLightIntensity: 1
-    flatCloudsAmbientIntensity: 0.16
-    flatCloudsAbsorbtion: 0.6
+    cirrusCloudsAlpha: 0.68
+    cirrusCloudsCoverage: 0.39
+    cirrusCloudsColorPower: 0.47
+    flatCloudsCoverage: 1.36
+    flatCloudsDensity: 0.53
+    flatCloudsLightIntensity: 0.08
+    flatCloudsAmbientIntensity: 0.1
+    flatCloudsAbsorbtion: 1.75
   lightingOverride:
     directLightIntensityModifier: 0.5
     ambientIntensityModifier: 0.6
     shadowIntensity: 1
   skyOverride:
     intensity: 1
-    skyColorTint: {r: 1, g: 1, b: 1, a: 1}
+    skyColorTint: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 1}
   fogOverride:
     fogDensity: 0.02
     fogHeightFalloff: 0.0016
