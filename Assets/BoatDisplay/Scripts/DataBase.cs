@@ -22,6 +22,11 @@ public class DataBase : MonoBehaviour
 
     private string USER_DATA_PATH = Path.Combine(Application.persistentDataPath, "user.json");
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
+
     public void Save(UserData data)
     {
         int idx = usrList.FindIndex(_ => data.Account == _.Account);

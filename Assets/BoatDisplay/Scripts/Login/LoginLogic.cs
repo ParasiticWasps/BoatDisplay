@@ -16,6 +16,11 @@ public class LoginLogic : MonoBehaviour
         return instance;
     }
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     public void LoginRequest(string account, string pwd, Action successAction, Action failedAction)
     {
         if (!DataBase.Get().Exists(account))

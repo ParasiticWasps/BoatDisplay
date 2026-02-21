@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b982c9fba9faf3a43bf4a9e7ced867d7, type: 3}
   m_Name: Flat Clouds Module
   m_EditorClassIdentifier: 
-  showModuleInspector: 1
+  showModuleInspector: 0
   showSaveLoad: 0
   active: 1
   settings:
     useCirrusClouds: 0
     cirrusCloudsTex: {fileID: 2800000, guid: 75c66597a85001644b2de40147b8d196, type: 3}
-    cirrusCloudsAlpha: 0.68
-    cirrusCloudsColorPower: 0.47
-    cirrusCloudsCoverage: 0.39
+    cirrusCloudsAlpha: 0.292
+    cirrusCloudsColorPower: 1
+    cirrusCloudsCoverage: 0.53
     cirrusCloudsColor:
       serializedVersion: 2
       key0: {r: 0, g: 0, b: 0, a: 1}
@@ -115,12 +115,12 @@ MonoBehaviour:
       m_ColorSpace: -1
       m_NumColorKeys: 4
       m_NumAlphaKeys: 2
-    flatCloudsLightIntensity: 0.08
-    flatCloudsAmbientIntensity: 0.1
-    flatCloudsAbsorbtion: 1.75
+    flatCloudsLightIntensity: 0.828
+    flatCloudsAmbientIntensity: 1.056
+    flatCloudsAbsorbtion: 1.424
     flatCloudsHGPhase: 0.8
-    flatCloudsCoverage: 1.36
-    flatCloudsDensity: 0.53
+    flatCloudsCoverage: 0
+    flatCloudsDensity: 1.054
     flatCloudsAltitude: 1
     flatCloudsTonemapping: 0
     flatCloudsBaseTiling: 1
@@ -130,9 +130,9 @@ MonoBehaviour:
   preset: {fileID: 11400000, guid: 0fcdd472bd6a8ec429fc1e9bc978c4fa, type: 2}
   showCirrusCloudsControls: 0
   show2DCloudsControls: 0
-  cloudFlatBaseAnim: {x: -0.8031648, y: 0.8337682}
-  cloudFlatDetailAnim: {x: -0.20356622, y: 0.47364977}
-  cirrusAnim: {x: 0.5434228, y: 0.5206164}
+  cloudFlatBaseAnim: {x: -0.5486688, y: 0.6547315}
+  cloudFlatDetailAnim: {x: -0.93125546, y: -0.4215374}
+  cirrusAnim: {x: 0.67779815, y: 0.42608434}
 --- !u!114 &-5447272849285213076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -881,7 +881,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    skyColorTint: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 1}
+    skyColorTint: {r: 1, g: 1, b: 1, a: 1}
   preset: {fileID: 11400000, guid: 44f43418b8d8b8142863e38d1e49e174, type: 2}
   showSkyControls: 0
   showSkySunControls: 0
@@ -904,118 +904,7 @@ MonoBehaviour:
   showSaveLoad: 0
   active: 1
   Settings:
-    ambientClips:
-    - showEditor: 0
-      name: Day
-      audioClip: {fileID: 8300000, guid: 3e0b793299afd7c4086f6dfcd604aaba, type: 3}
-      audioMixerGroup: {fileID: 0}
-      playBackType: 1
-      myAudioSource: {fileID: 0}
-      loop: 1
-      volume: 0
-      volumeCurve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 0
-          inSlope: -0.000000659857
-          outSlope: -0.000000659857
-          tangentMode: 34
-          weightedMode: 0
-          inWeight: 0.33333334
-          outWeight: 0.33333334
-        - serializedVersion: 3
-          time: 0.496813
-          value: -0.00000032782555
-          inSlope: 0.026825864
-          outSlope: 0.026825864
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0.33333334
-          outWeight: 0.12836285
-        - serializedVersion: 3
-          time: 0.5332272
-          value: 0.69103265
-          inSlope: 2.2555194
-          outSlope: 2.2555194
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0.33333334
-          outWeight: 0.0717938
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 0.050087996
-          outSlope: 0.050087996
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0.15470096
-          outWeight: 0.33333334
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      maxVolume: 1
-    - showEditor: 0
-      name: Night
-      audioClip: {fileID: 8300000, guid: eef01bfe93973f4419f0b3dd1b7a6a06, type: 3}
-      audioMixerGroup: {fileID: 0}
-      playBackType: 1
-      myAudioSource: {fileID: 0}
-      loop: 1
-      volume: 0
-      volumeCurve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0.0058403015
-          value: 0.003780365
-          inSlope: 0.40376505
-          outSlope: 0.40376505
-          tangentMode: 34
-          weightedMode: 0
-          inWeight: 0.33333334
-          outWeight: 0.33333334
-        - serializedVersion: 3
-          time: 0.30587992
-          value: 0.12492588
-          inSlope: 0.9373293
-          outSlope: 0.9373293
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0.33333334
-          outWeight: 0.33333334
-        - serializedVersion: 3
-          time: 0.45850945
-          value: 0.39840025
-          inSlope: -0.15356094
-          outSlope: -0.15356094
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0.3681847
-          outWeight: 0.09808861
-        - serializedVersion: 3
-          time: 0.51107603
-          value: 0.00567906
-          inSlope: -0.03341259
-          outSlope: -0.03341259
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0.33333334
-          outWeight: 0.11550105
-        - serializedVersion: 3
-          time: 1.0029275
-          value: 0.0013360546
-          inSlope: -0.07205321
-          outSlope: -0.07205321
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0.15684973
-          outWeight: 0.33333334
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      maxVolume: 1
+    ambientClips: []
     weatherClips:
     - showEditor: 0
       name: Light Rain
@@ -1039,7 +928,7 @@ MonoBehaviour:
       playBackType: 0
       myAudioSource: {fileID: 0}
       loop: 1
-      volume: 1
+      volume: 0
       volumeCurve:
         serializedVersion: 2
         m_Curve: []
@@ -1145,10 +1034,10 @@ MonoBehaviour:
   ambientVolumeModifier: 0
   weatherVolumeModifier: 0
   thunderVolumeModifier: 0
-  showAmbientSetupControls: 0
+  showAmbientSetupControls: 1
   showWeatherSetupControls: 0
   showThunderSetupControls: 0
-  showAudioControls: 0
+  showAudioControls: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1198,7 +1087,7 @@ MonoBehaviour:
       prefab: {fileID: 6936246916098640434, guid: bf3881f9fe64de14597de578d2acee5d, type: 3}
       localPositionOffset: {x: 0, y: 25, z: 0}
       localRotationOffset: {x: -90, y: 0, z: 0}
-      emissionRate: 1
+      emissionRate: 0
       maxEmission: 2000
     - mySystem: {fileID: 0}
       name: Snow
@@ -1688,7 +1577,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    directLightIntensityModifier: 0.5
+    directLightIntensityModifier: 1.2
     setAmbientLighting: 1
     ambientMode: 0
     ambientSkyColorGradient:
@@ -1805,7 +1694,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    ambientIntensityModifier: 0.6
+    ambientIntensityModifier: 1
     ambientUpdateEveryFrame: 0
     ambientUpdateIntervall: 0.1
     shadowIntensity: 1
@@ -1975,8 +1864,8 @@ MonoBehaviour:
     temperatureWeatherMod: 0
     temperatureCustomMod: 0
     temperatureChangingSpeed: 0.1
-    wetness: 0.99999994
-    wetnessTarget: 1
+    wetness: 0
+    wetnessTarget: 0
     snow: 0
     snowTarget: 0
     wetnessAccumulationSpeed: 1
@@ -1985,7 +1874,7 @@ MonoBehaviour:
     snowMeltSpeed: 1
     snowMeltingTresholdTemperature: 1
     windDirectionX: 1
-    windDirectionY: -1
+    windDirectionY: 0
     windSpeed: 0.25
     windTurbulence: 0.25
   preset: {fileID: 11400000, guid: c2a8d80258fd83a409a05aa912abca80, type: 2}
@@ -2074,31 +1963,31 @@ MonoBehaviour:
     cloudsWindDirectionYModifier: 1
     windSpeedModifier: 0.015
     windUpwards: 0.02
-    coverage: 0.48
+    coverage: -1
     worleyFreq2: 2
     worleyFreq1: 4
-    dilateCoverage: 1
-    dilateType: 0.233
-    cloudsTypeModifier: 0.804
+    dilateCoverage: 0.929
+    dilateType: 1
+    cloudsTypeModifier: 1
     locationOffset: {x: 0, y: 0}
     bottomCloudsHeight: 2000
     topCloudsHeight: 8000
-    density: 0.2
-    densitySmoothness: 1.65
-    scatteringIntensity: 0.12
+    density: 0.55
+    densitySmoothness: 1
+    scatteringIntensity: 1.05
     silverLiningSpread: 0.8
-    powderIntensity: 0.219
-    curlIntensity: 0.2
+    powderIntensity: 0.848
+    curlIntensity: 0.1
     lightStepModifier: 0.15
-    lightAbsorbtion: 1.286
-    multiScatteringA: 0.44
-    multiScatteringB: 0.177
-    multiScatteringC: 0.44
+    lightAbsorbtion: 1.01
+    multiScatteringA: 0.575
+    multiScatteringB: 0.227
+    multiScatteringC: 0
     baseNoiseUV: 6
     detailNoiseUV: 28
-    baseErosionIntensity: 0
-    detailErosionIntensity: 0.8
-    anvilBias: 0.651
+    baseErosionIntensity: 0.184
+    detailErosionIntensity: 0.3
+    anvilBias: 0.398
   settingsLayer2:
     cloudsWindDirectionXModifier: -1
     cloudsWindDirectionYModifier: -1
@@ -2107,28 +1996,28 @@ MonoBehaviour:
     coverage: -1
     worleyFreq2: 2
     worleyFreq1: 10
-    dilateCoverage: 0.5
-    dilateType: 0.5
-    cloudsTypeModifier: 0.5
+    dilateCoverage: 1
+    dilateType: 1
+    cloudsTypeModifier: 1
     locationOffset: {x: 0, y: 0}
     bottomCloudsHeight: 8000
     topCloudsHeight: 12000
-    density: 0.3
+    density: 0.184
     densitySmoothness: 1
-    scatteringIntensity: 1.5
+    scatteringIntensity: 0.9
     silverLiningSpread: 0.8
-    powderIntensity: 0.3
-    curlIntensity: 0.05
+    powderIntensity: 0.84
+    curlIntensity: 0.1
     lightStepModifier: 0.05
-    lightAbsorbtion: 1
-    multiScatteringA: 0.5
-    multiScatteringB: 0.52
-    multiScatteringC: 0.5
+    lightAbsorbtion: 0.13
+    multiScatteringA: 0.495
+    multiScatteringB: 0.258
+    multiScatteringC: 0.548
     baseNoiseUV: 6
     detailNoiseUV: 34
-    baseErosionIntensity: 0
-    detailErosionIntensity: 0.3
-    anvilBias: 0
+    baseErosionIntensity: 0.449
+    detailErosionIntensity: 0.462
+    anvilBias: 0.277
   settingsGlobal:
     dualLayer: 1
     floatingPointOriginMod: {x: 0, y: 0, z: 0}
@@ -2235,7 +2124,7 @@ MonoBehaviour:
     cloudsWorldScale: 5000000
     maxRenderDistance: 70000
     atmosphereColorSaturateDistance: 35000
-    ambientLighIntensity: 0.6
+    ambientLighIntensity: 1
     cloudShadows: 0
     cloudShadowsIntensity: 2
     cloudsTravelSpeed: 0
@@ -2256,8 +2145,8 @@ MonoBehaviour:
   showDensityControls: 0
   showTextureControls: 0
   showWindControls: 0
-  cloudAnimLayer1: {x: -0.85134447, y: 0.9800416, z: -0.62258023}
-  cloudAnimLayer2: {x: -0.044394143, y: -0.9229522, z: -0.17970918}
+  cloudAnimLayer1: {x: -0.4695959, y: 0.71148324, z: -0.6568058}
+  cloudAnimLayer2: {x: -0.17164262, y: -0.8334311, z: -0.21524811}
   cloudAnimNonScaledLayer1: {x: 0.006009331, y: -0.006009331, z: -0.1001555}
   cloudAnimNonScaledLayer2: {x: -0.00200311, y: 0.00200311, z: -0.1001555}
   weatherMap: {fileID: 0}
@@ -2278,7 +2167,7 @@ MonoBehaviour:
   active: 1
   Settings:
     useAurora: 0
-    auroraIntensityModifier: 1
+    auroraIntensityModifier: 0
     auroraIntensity:
       serializedVersion: 2
       m_Curve:
@@ -2361,7 +2250,7 @@ MonoBehaviour:
     environmentTransitionSpeed: 1
     audioTransitionSpeed: 1
   preset: {fileID: 11400000, guid: 8c4e279017d5e44458e3e4663b6ab460, type: 2}
-  targetWeatherType: {fileID: 11400000, guid: f736e404e0b052942bc41c35c50dccad, type: 2}
+  targetWeatherType: {fileID: 11400000, guid: 3e61e22e1ac8ba045a3b0e53c22b3629, type: 2}
   weatherBlendProgress: 1
   globalAutoWeatherChange: 1
   triggerCollider: {fileID: 0}
@@ -2388,7 +2277,7 @@ MonoBehaviour:
     volumetrics: 0
     steps: 32
     quality: 0
-    scattering: 0.39
+    scattering: 0.045
     scatteringMultiplier:
       serializedVersion: 2
       m_Curve:
@@ -2431,8 +2320,8 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    extinction: 0.232
-    anistropy: 0.105
+    extinction: 0.089
+    anistropy: 0.6
     maxRange: 1000
     maxRangePointSpot: 100
     noiseIntensity: 0
@@ -2444,15 +2333,15 @@ MonoBehaviour:
     fogQualityMode: 1
     floatingPointOriginMod: {x: 0, y: 0, z: 0}
     globalFogHeight: 0
-    fogDensity: 0.02
-    fogHeightFalloff: 0.0016
+    fogDensity: 0.019
+    fogHeightFalloff: 0.0128
     fogHeight: 0
-    fogDensity2: 0.312
-    fogHeightFalloff2: 0.0417
-    fogHeight2: -40
+    fogDensity2: 0.012
+    fogHeightFalloff2: 0.0015
+    fogHeight2: 0
     fogMaxOpacity: 1
     startDistance: 0.01
-    fogColorBlend: 0.5
+    fogColorBlend: 1
     fogColorMod: {r: 1, g: 1, b: 1, a: 1}
     ambientColorGradient:
       serializedVersion: 2
@@ -2867,6 +2756,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   customFogDensityModifer: 1
   fogMat: {fileID: 0}
   volumetricsMat: {fileID: 0}
@@ -2892,7 +2783,7 @@ MonoBehaviour:
     prefab: {fileID: 8233971941884837668, guid: 3686e34c2aa90c44e8eab718f3bf99b6, type: 3}
     customLightningEffect: {fileID: 0}
     lightningStorm: 0
-    randomLightingDelay: 1
+    randomLightingDelay: 9.6
     randomSpawnRange: 5000
     randomTargetRange: 5000
   preset: {fileID: 11400000, guid: e9a0f93373ad7014fbe96d77c75cbe4e, type: 2}

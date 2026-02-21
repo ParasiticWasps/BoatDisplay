@@ -6,9 +6,9 @@ using UnityEngine.UI;
 
 public class LoginGUI : MonoBehaviour
 {
-    [SerializeField] private TMP_InputField accountInput;
+    [SerializeField] private InputField accountInput;
 
-    [SerializeField] private TMP_InputField pwdInput;
+    [SerializeField] private InputField pwdInput;
 
     [SerializeField] private Button loginButton;
 
