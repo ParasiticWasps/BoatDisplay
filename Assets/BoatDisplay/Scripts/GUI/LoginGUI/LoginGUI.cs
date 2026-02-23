@@ -6,15 +6,25 @@ using UnityEngine.UI;
 
 public class LoginGUI : MonoBehaviour
 {
-    [SerializeField] private InputField accountInput;
+    [SerializeField] private TMP_InputField accountInput;
 
-    [SerializeField] private InputField pwdInput;
+    [SerializeField] private TMP_InputField pwdInput;
 
     [SerializeField] private Button loginButton;
 
+    [SerializeField] private Text hintText;
+
+    private SelectModeGUI selectModeGUI;
+
+    private void Awake()
+    {
+        selectModeGUI = FindObjectOfType<SelectModeGUI>();
+        selectModeGUI.gameObject.SetActive(false);
+    }
+
     private void Start()
     {
-        
+        hintText.gameObject.SetActive(false);
     }
 
     public void OnClickedLoginButton()
@@ -26,11 +36,15 @@ public class LoginGUI : MonoBehaviour
 
     private void LoginSuccessed()
     {
-
+        if (selectModeGUI != null)
+        {
+            selectModeGUI.gameObject.SetActive(true);
+            gameObject.SetActive(false);
+        }
     }
 
     private void LoginFailed()
     {
-
+        hintText.gameObject.SetActive(true);
     }
 }

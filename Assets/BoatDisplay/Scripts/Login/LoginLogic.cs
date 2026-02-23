@@ -47,7 +47,7 @@ public class LoginLogic : MonoBehaviour
         UserData data = new UserData();
         data.Account = account;
         data.Password = pwd;
-
+        PlayerInfoHandle.Get().CurrentPlayerData = data;
         DataBase.Get().Save(data);
     }
 }

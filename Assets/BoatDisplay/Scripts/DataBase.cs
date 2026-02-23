@@ -20,10 +20,11 @@ public class DataBase : MonoBehaviour
 
     private List<UserData> usrList = new List<UserData>();
 
-    private string USER_DATA_PATH = Path.Combine(Application.persistentDataPath, "user.json");
+    private string USER_DATA_PATH = "";
 
     private void Awake()
     {
+        USER_DATA_PATH = Path.Combine(Application.persistentDataPath, "user.json");
         DontDestroyOnLoad(this);
     }
 
