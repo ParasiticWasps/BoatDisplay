@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/BoatDisplay/Scenes/LoginDemo.unity
     guid: 7f884e7a0bb6cc54cbf93549cf6d0ab7
-  - enabled: 1
+  - enabled: 0
     path: Assets/BoatDisplay/Scenes/AssessmenDemo.unity
     guid: 61034460bde991e4bbba7668f55ab5c2
   m_configObjects:
