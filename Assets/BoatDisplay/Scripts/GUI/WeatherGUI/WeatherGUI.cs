@@ -1,4 +1,5 @@
 using DG.Tweening;
+using Enviro;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -33,7 +34,7 @@ public class WeatherGUI : BaseGui
 
         lastoneButton = weatherButton;
         DOTween.To(() => VolumetricFog.instance.alpha, x => VolumetricFog.instance.alpha = x,
-            lastoneButton.WeatherIndex == 3 ? 1.0f : 0.0f, 1.5f);
+            lastoneButton.WeatherIndex == 3 ? 0.97f : 0.0f, 1.5f);
         //fogLauncher.enabled = lastoneButton.WeatherIndex == 3;
     }
 }
