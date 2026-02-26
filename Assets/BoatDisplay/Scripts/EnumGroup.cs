@@ -9,6 +9,7 @@ namespace BoatDisplay
         Weather,
         Time,
         Boat,
+        Answer,
         None
     }
 }

@@ -53,4 +53,23 @@ public class BoatManager : MonoBehaviour
         }
         return install;
     }
+
+
+    // Assessment Mode
+    private List<int> boatsIndexLive = new List<int>();
+    public int GetRandomBoatsIndex()
+    {
+        if (boatsIndexLive.Count == 0)
+        {
+            for (int i = 0; i < boats.Count; ++i)
+            {
+                boatsIndexLive.Add(i);
+            }
+        }
+        
+        int randidx = UnityEngine.Random.Range(0, boatsIndexLive.Count);
+        int randBoatIndex = boatsIndexLive[randidx];
+        boatsIndexLive.Remove(randBoatIndex);
+        return randBoatIndex;
+    }
 }

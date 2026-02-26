@@ -7,6 +7,7 @@ public enum EPanel
     TimePanel = 0 << 1,
     WeatherPanel = 0 << 2,
     BoatPanel = 0 << 3,
+    AnswerSheet = 0 << 4,
     Neno = -1
 }
 
