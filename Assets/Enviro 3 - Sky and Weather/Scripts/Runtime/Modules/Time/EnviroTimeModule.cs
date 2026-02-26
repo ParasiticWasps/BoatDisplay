@@ -395,6 +395,7 @@ namespace Enviro
             return string.Format("{0:00}:{1:00}", hours, minutes);
         }
 
+        public float FogLastTimeOfDay = 0.0f;
         /// <summary>
         /// Set the time of day in hours. (12.5 = 12:30)
         /// </summary>

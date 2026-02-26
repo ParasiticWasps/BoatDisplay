@@ -16,6 +16,7 @@ MonoBehaviour:
   - {fileID: 114446678942611496}
   - {fileID: 114149177978483154}
   - {fileID: 114863820046541604}
+  - {fileID: 9143373552217365722}
 --- !u!114 &114149177978483154
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -93,7 +94,7 @@ MonoBehaviour:
     overrideState: 1
     value: 0
   gradingMode:
-    overrideState: 0
+    overrideState: 1
     value: 1
   externalLut:
     overrideState: 0
@@ -1439,3 +1440,50 @@ MonoBehaviour:
   quality:
     overrideState: 0
     value: 2
+--- !u!114 &9143373552217365722
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a79b01ea5641d4aa6daa2e23605641, type: 3}
+  m_Name: Bloom
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  intensity:
+    overrideState: 1
+    value: 50
+  threshold:
+    overrideState: 1
+    value: 0.8
+  softKnee:
+    overrideState: 1
+    value: 0
+  clamp:
+    overrideState: 0
+    value: 65472
+  diffusion:
+    overrideState: 1
+    value: 7.16
+  anamorphicRatio:
+    overrideState: 1
+    value: -1
+  color:
+    overrideState: 0
+    value: {r: 1, g: 1, b: 1, a: 1}
+  fastMode:
+    overrideState: 0
+    value: 0
+  dirtTexture:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 1
+  dirtIntensity:
+    overrideState: 0
+    value: 0

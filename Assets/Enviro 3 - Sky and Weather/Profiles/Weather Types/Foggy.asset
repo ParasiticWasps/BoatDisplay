@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cbac6e678443724c9bd2baf5d564c1d, type: 3}
   m_Name: Foggy
   m_EditorClassIdentifier: 
-  showEditor: 0
+  showEditor: 1
   showEffectControls: 0
   showCloudControls: 0
-  showFlatCloudControls: 0
-  showFogControls: 1
+  showFlatCloudControls: 1
+  showFogControls: 0
   showSkyControls: 0
   showLightingControls: 0
   showAuroraControls: 0
@@ -67,9 +67,9 @@ MonoBehaviour:
     cirrusCloudsAlpha: 0.5
     cirrusCloudsCoverage: 0.5
     cirrusCloudsColorPower: 1
-    flatCloudsCoverage: 1.22
+    flatCloudsCoverage: 2
     flatCloudsDensity: 0.6
-    flatCloudsLightIntensity: 0.16
+    flatCloudsLightIntensity: 0.08
     flatCloudsAmbientIntensity: 0
     flatCloudsAbsorbtion: 0.6
   lightingOverride:

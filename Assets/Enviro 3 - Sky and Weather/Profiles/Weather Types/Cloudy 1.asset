@@ -45,7 +45,7 @@ MonoBehaviour:
     baseErosionIntensityLayer1: 0.5
     detailErosionIntensityLayer1: 0.5
     curlIntensityLayer1: 0.25
-    showLayer2: 1
+    showLayer2: 0
     coverageLayer2: 0.093
     dilateCoverageLayer2: 0.302
     dilateTypeLayer2: 1
@@ -67,9 +67,9 @@ MonoBehaviour:
     cirrusCloudsAlpha: 1
     cirrusCloudsCoverage: 0.431
     cirrusCloudsColorPower: 1.25
-    flatCloudsCoverage: 1.287
+    flatCloudsCoverage: 1.69
     flatCloudsDensity: 1
-    flatCloudsLightIntensity: 1.014
+    flatCloudsLightIntensity: 0
     flatCloudsAmbientIntensity: 0.95
     flatCloudsAbsorbtion: 1.814
   lightingOverride:

@@ -43,6 +43,7 @@ public class CurveSlider : MonoBehaviour
         //float x = normalizedValue;
         //float y = curve.Evaluate(normalizedValue);
 
+        EnviroManager.instance.Time.FogLastTimeOfDay = slider.value * 24f;
         EnviroManager.instance.Time.SetTimeOfDay(slider.value * 24f);
 
         hours = "";
