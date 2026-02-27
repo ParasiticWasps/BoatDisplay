@@ -25,6 +25,7 @@ public class DataBase : MonoBehaviour
     private void Awake()
     {
         USER_DATA_PATH = Path.Combine(Application.persistentDataPath, "user.json");
+        Load();
         DontDestroyOnLoad(this);
     }
 

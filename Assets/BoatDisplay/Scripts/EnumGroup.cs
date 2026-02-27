@@ -12,4 +12,11 @@ namespace BoatDisplay
         Answer,
         None
     }
+
+    public enum  GameMode
+    {
+        Parctice,
+        Assessment,
+        None
+    }
 }

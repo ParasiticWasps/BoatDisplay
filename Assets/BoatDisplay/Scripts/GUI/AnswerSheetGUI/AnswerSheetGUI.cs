@@ -17,9 +17,23 @@ public class AnswerSheetGUI : BaseGui
 
     public BoatPanel boatPanel;
 
+    [SerializeField] private FinishedGUI finishedGUI;
+
+    private static AnswerSheetGUI instance;
+
+    public static AnswerSheetGUI Get()
+    {
+        if (instance == null)
+        {
+            instance = FindObjectOfType<AnswerSheetGUI>();
+        }
+
+        return instance;
+    }
+
     override public void Awake()
     {
-        guiName = EPanel.BoatPanel;
+        guiName = EPanel.AnswerSheet;
         base.Awake();
         Initialized();
     }
@@ -45,35 +59,8 @@ public class AnswerSheetGUI : BaseGui
         }
 
         // TODO..
-        boatPanel.OnBoatClickEvent += DisplayBoat;
-        boatPanel.OnShipClickEvent += DisplayShip;
-    }
-
-
-    // TODO..
-
-    private void DisplayShipEvent(int boatIndex)
-    {
-        boatManager.DisplayDiffBoatBaseOnIndex(boatIndex, true);
-        boatManager.SetBoatScaleBaseOnIndex(boatIndex, BoatScaleState.Large);
-    }
-
-    private void DisplayBoatEvent(int boatIndex)
-    {
-        boatManager.DisplayDiffBoatBaseOnIndex(boatIndex, true);
-        boatManager.SetBoatScaleBaseOnIndex(boatIndex, BoatScaleState.Small);
-    }
-
-    private void DisplayShip()
-    {
-        int boatIndex = LoopScroll.Get().TempCentre.GetComponentInChildren<BoatButton>().GetBoatIndex();
-        DisplayShipEvent(boatIndex);
-    }
-
-    private void DisplayBoat()
-    {
-        int boatIndex = LoopScroll.Get().TempCentre.GetComponentInChildren<BoatButton>().GetBoatIndex();
-        DisplayBoatEvent(boatIndex);
+        boatPanel.OnShipClickEvent += ConfirmTheAnswer;
+        //boatPanel.OnShipClickEvent += DisplayShip;
     }
 
     private void SetBoatPanelActive(bool active)
@@ -85,5 +72,18 @@ public class AnswerSheetGUI : BaseGui
     {
         bool active = !boatPanel.gameObject.activeSelf;
         SetBoatPanelActive(active);
+    }
+
+    private void ConfirmTheAnswer()
+    {
+        int boatIndex = LoopScroll.Get().TempCentre.GetComponentInChildren<BoatButton>().GetBoatIndex();
+        AssessmentLogic.Get().ConfirmTheAnswer(boatIndex);
+    }
+
+    public void CompleteTheAnswer(string score)
+    {
+        gameObject.SetActive(false);
+        finishedGUI.SetActive(true);
+        finishedGUI.SetScoreText(score);
     }
 }

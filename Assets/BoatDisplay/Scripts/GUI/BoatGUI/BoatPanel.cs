@@ -10,14 +10,14 @@ public class BoatPanel : MonoBehaviour
 
     [SerializeField] private Button boatButton;
 
-    public event Action OnShipClickEvent;
-
     public event Action OnBoatClickEvent;
+
+    public event Action OnShipClickEvent;
 
     private void Start()
     {
-        shipButton.onClick.AddListener(() => OnShipClickEvent.Invoke());
-        boatButton.onClick.AddListener(() => OnBoatClickEvent.Invoke());
+        shipButton.onClick.AddListener(() => OnShipClickEvent?.Invoke());
+        boatButton.onClick.AddListener(() => OnBoatClickEvent?.Invoke());
 
         SetActive(false);
     }

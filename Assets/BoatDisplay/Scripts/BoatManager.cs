@@ -1,3 +1,4 @@
+using BoatDisplay;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -17,6 +18,15 @@ public class BoatManager : MonoBehaviour
 
     private static BoatManager install;
 
+    public static BoatManager Get()
+    {
+        if (install == null)
+        {
+            install = FindObjectOfType<BoatManager>();
+        }
+        return install;
+    }
+
     private void Start()
     {
         Initialized();
@@ -24,7 +34,15 @@ public class BoatManager : MonoBehaviour
 
     private void Initialized()
     {
-        DisplayDiffBoatBaseOnIndex(currBoatsIndex, true);
+        if (GlobalVar.Mode == GameMode.Parctice)
+        {
+            DisplayDiffBoatBaseOnIndex(currBoatsIndex, true);
+        }
+
+        for (int i = 0; i < boats.Count; ++i)
+        {
+            boatsIndexLive.Add(i);
+        }
     }
 
     public void DisplayDiffBoatBaseOnIndex(int index, bool active)
@@ -45,16 +63,6 @@ public class BoatManager : MonoBehaviour
         }
     }
 
-    public static BoatManager Get()
-    {
-        if (install == null)
-        {
-            install = FindObjectOfType<BoatManager>();
-        }
-        return install;
-    }
-
-
     // Assessment Mode
     private List<int> boatsIndexLive = new List<int>();
     public int GetRandomBoatsIndex()
@@ -72,4 +80,6 @@ public class BoatManager : MonoBehaviour
         boatsIndexLive.Remove(randBoatIndex);
         return randBoatIndex;
     }
+
+    public int GetTopicCount() => boatsIndexLive.Count;
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,6 +21,12 @@ public class LoginGUI : MonoBehaviour
     {
         selectModeGUI = FindObjectOfType<SelectModeGUI>();
         selectModeGUI.gameObject.SetActive(false);
+
+        Debug.Log($"usrname: {PlayerInfoHandle.Get().CurrentPlayerData.Account}, score: {PlayerInfoHandle.Get().CurrentPlayerData.Score}");
+        if (PlayerInfoHandle.Get().CurrentPlayerData?.Account.Count() > 0)
+        {
+            LoginSuccessed();
+        }
     }
 
     private void Start()

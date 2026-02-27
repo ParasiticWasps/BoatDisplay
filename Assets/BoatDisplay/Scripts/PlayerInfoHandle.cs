@@ -16,4 +16,16 @@ public class PlayerInfoHandle : MonoBehaviour
     }
 
     public UserData CurrentPlayerData;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
+
+    public void UpdatePlayerScore(int score)
+    {
+        int maxScore = Mathf.Max(CurrentPlayerData.Score, score);
+        Debug.Log($"UpdatePlayerScore: {score}, maxScore: {maxScore}");
+        CurrentPlayerData.Score = maxScore;
+    }
 }
