@@ -20,6 +20,8 @@ public class DataBase : MonoBehaviour
 
     private List<UserData> usrList = new List<UserData>();
 
+    public List<UserData> UsrList { get => usrList; }
+
     private string USER_DATA_PATH = "";
 
     private void Awake()

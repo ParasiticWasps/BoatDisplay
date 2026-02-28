@@ -20,7 +20,6 @@ namespace LuxWater {
 		[Space(8)]
 		public bool SlidingVolume = false;
 		public float GridSize = 10.0f;
-
 		
 		private LuxWater_UnderWaterRendering waterrendermanager;
 		private bool readyToGo = false;
